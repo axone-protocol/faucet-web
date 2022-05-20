@@ -1,0 +1,42 @@
+{
+    "name": "faucet-web",
+    "version": "0.1.0",
+    "private": true,
+    "repository": "git@github.com:okp4/faucet-web.git",
+    "license": "BSD-3-Clause",
+    "description": "Token faucet web app for the OKP4 testnets.",
+    "homepage": "https://github.com/okp4/faucet-web",
+    "author": {
+        "name": "OKP4",
+        "web": "https://okp4.com"
+    },
+    "engines": {
+        "node": "^16.14.0",
+        "yarn": "~1.22.17"
+    },
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "12.1.6",
+        "react": "18.1.0",
+        "react-dom": "18.1.0"
+    },
+    "devDependencies": {
+        "@okp4/eslint-config": "^1.0.1",
+        "@types/node": "17.0.34",
+        "@types/react": "18.0.9",
+        "@types/react-dom": "18.0.4",
+        "@typescript-eslint/eslint-plugin": "^5.25.0",
+        "eslint": "8.15.0",
+        "eslint-config-next": "12.1.6",
+        "eslint-plugin-functional": "^4.2.1",
+        "eslint-plugin-react": "^7.30.0",
+        "eslint-plugin-react-hooks": "^4.5.0",
+        "prettier": "^2.6.2",
+        "typescript": "4.6.4"
+    }
+}
