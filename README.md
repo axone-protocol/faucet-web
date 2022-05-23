@@ -11,7 +11,7 @@
 
 ## Purpose
 
-A webapp that allow users to get a small amount of `knøw` tokens to play with the `ØKP4` testnet.
+A webapp that allows users to get a small amount of `knøw` tokens to play with the [ØKP4]([okp4.network](https://okp4.network)) testnet.
 
 ## Setup
 
