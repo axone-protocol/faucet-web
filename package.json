@@ -1,7 +1,7 @@
 {
   "name": "@okp4/faucet-web",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "repository": "git@github.com:okp4/faucet-web.git",
   "license": "BSD-3-Clause",
   "description": "Token faucet web app for the OKP4 testnets.",
