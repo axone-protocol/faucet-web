@@ -8,13 +8,14 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   publish-docker-images:
     runs-on: ubuntu-20.04
     if: github.event_name != 'pull_request'
-    concurrency:
-      group: publish-docker-images-${{ github.ref }}
-      cancel-in-progress: true
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
