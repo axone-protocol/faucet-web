@@ -4,11 +4,11 @@
   "private": false,
   "repository": "git@github.com:okp4/faucet-web.git",
   "license": "BSD-3-Clause",
-  "description": "Token faucet web app for the OKP4 testnets.",
+  "description": "Token faucet web app for the ØKP4 network testnets.",
   "homepage": "https://github.com/okp4/faucet-web",
   "author": {
     "name": "OKP4",
-    "web": "https://okp4.com"
+    "web": "https://okp4.network"
   },
   "engines": {
     "node": "^16.14.0",
