@@ -1,8 +1,32 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "daily"
+      interval: weekly
     reviewers:
-      - "maintainers"
+      - amimart
+      - ccamel
+      - fredericvilcot
+      - ErikssonJoakim
+      - lolottetheclash
+    assignees:
+      - ccamel
+      - fredericvilcot
+      - lolottetheclash
+    open-pull-requests-limit: 5
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    reviewers:
+      - amimart
+      - ccamel
+      - fredericvilcot
+      - ErikssonJoakim
+      - lolottetheclash
+    assignees:
+      - ccamel
+      - fredericvilcot
+      - lolottetheclash
+    open-pull-requests-limit: 5
