@@ -1,0 +1,24 @@
+@import '@okp4/ui/lib/scss/themes.scss';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  div#__next,
+  div#__next > div {
+    height: 100%;
+  }
+}
+
+.okp4-faucet-main {
+  @include with-theme {
+    height: 100%;
+    background: themed('header-background');
+  }
+
+  .okp4-content-main {
+    height: calc(100% - 166px);
+  }
+}
