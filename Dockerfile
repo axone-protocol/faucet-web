@@ -1,7 +1,7 @@
 #-------------
 FROM node:16-alpine AS deps
 
-RUN apk add --no-cache libc6-compat=1.2.2-r7
+RUN apk add --no-cache libc6-compat=1.2.3-r0
 
 WORKDIR /app
 
@@ -27,7 +27,7 @@ FROM node:16-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production \
-    NEXT_TELEMETRY_DISABLED=1
+  NEXT_TELEMETRY_DISABLED=1
 
 RUN \
   addgroup --system --gid 1001 nodejs && \
