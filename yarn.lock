@@ -148,10 +148,10 @@
     tsutils ">=3.21.0"
     typescript ">=4.6.2"
 
-"@okp4/ui@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-1.6.0.tgz#08f588583f74b6ef1a2cb97cbc6ae607241ba4ef"
-  integrity sha512-aCNDtzme2juEZ4nG6YfHOk4Da4GqigfkuyhMZM9g8VwAfHB7ATJnUG2UrM3GqzIDGidY8SfjwFLMbbAAHvJy/A==
+"@okp4/ui@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-1.7.0.tgz#eeb44695bb3f77d8a05e85e81d7a675ee2243525"
+  integrity sha512-YZUC8Jlvoqdv9hfarW92aOzE4PmpXTCQxMA3/8EbKcLe5IcZh6Jyt3QbYTnIz+EMsjC0ETq6xiVkXs4pv57Hbw==
 
 "@rushstack/eslint-patch@^1.1.3":
   version "1.1.3"
