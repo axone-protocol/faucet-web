@@ -17,13 +17,7 @@ const ContentWrapper: React.FC = () => {
   const themedImage = theme === 'light' ? lightCosmos.src : darkCosmos.src
 
   return (
-    <div
-      style={{
-        height: '100%',
-        backgroundImage: `url(${themedImage})`,
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <div className="okp4-faucet-testnet-content" style={{ backgroundImage: `url(${themedImage})` }}>
       <HeaderWithoutSSR />
       <FaucetWithoutSSR />
     </div>

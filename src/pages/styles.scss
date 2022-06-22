@@ -12,13 +12,13 @@ body {
   }
 }
 
-.okp4-faucet-main {
+.okp4-faucet-testnet-main {
   @include with-theme {
     height: 100%;
     background: themed('header-background');
-  }
 
-  .okp4-content-main {
-    height: calc(100% - 166px);
+  .okp4-faucet-testnet-content {
+    height: 100%;
+    }
   }
 }
