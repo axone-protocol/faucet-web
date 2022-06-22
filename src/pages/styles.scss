@@ -17,8 +17,12 @@ body {
     height: 100%;
     background: themed('header-background');
 
-  .okp4-faucet-testnet-content {
-    height: 100%;
+    .okp4-faucet-testnet-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-repeat: no-repeat;
     }
   }
 }
