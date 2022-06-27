@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
 import './styles.scss'
 
-const ThemeProvider = dynamic(async () => import('../components/theme/ThemeProvider'), {
+const ThemeProvider = dynamic(async () => (await import('@okp4/ui')).ThemeProvider, {
   ssr: false
 })
 
