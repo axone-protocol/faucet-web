@@ -24,9 +24,9 @@ const Okp4Link = (): JSX.Element => {
       {`${t('footer:brand-link')} `}
       <Typography color="highlighted-text" fontSize="x-small" fontWeight="bold">
         <a
+          className="okp4-brand-link"
           href="https://okp4.network/"
           rel="author noreferrer"
-          style={{ textDecoration: 'unset', color: 'inherit' }}
           target="_blank"
         >
           ØKP4
