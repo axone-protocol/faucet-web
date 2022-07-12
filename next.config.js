@@ -7,6 +7,9 @@ const nextConfig = {
     CHAIN_NAME: process.env.CHAIN_NAME,
     CHAIN_RPC_ENDPOINT: process.env.CHAIN_RPC_ENDPOINT,
     CHAIN_REST_ENDPOINT: process.env.CHAIN_REST_ENDPOINT
+  },
+  experimental: {
+    outputStandalone: true
   }
 }
 
