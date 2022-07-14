@@ -1,9 +1,13 @@
-const keplrChainConfig = [
+/* eslint-disable @typescript-eslint/prefer-readonly-parameter-types */
+import type { Chain } from "./config.type"
+
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+const keplrChainConfig = (chain: Chain) => [
   {
-    chainId: process.env.CHAIN_ID,
-    chainName: process.env.CHAIN_NAME,
-    rpc: process.env.CHAIN_RPC_ENDPOINT,
-    rest: process.env.CHAIN_REST_ENDPOINT,
+    chainId: chain.id,
+    chainName: chain.name,
+    rpc: chain.endpoints.rpc,
+    rest: chain.endpoints.rest,
     bip44: {
       coinType: 118
     },

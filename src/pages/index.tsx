@@ -9,7 +9,7 @@ const ContentWithoutSSR = dynamic(async () => import('../components/content/Cont
   ssr: false
 })
 
-const Home: NextPage = () => {
+const Home: NextPage<{chainId: string}> = ({chainId}: Readonly<{chainId: string}>) => {
   return (
     <div className="okp4-faucet-testnet-main">
       <Head>
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <link href="/okp4-logo.png" rel="icon" />
       </Head>
 
-      <ContentWithoutSSR />
+      <ContentWithoutSSR chainId={chainId} />
     </div>
   )
 }

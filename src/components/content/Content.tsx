@@ -43,8 +43,9 @@ const Okp4Link = (): JSX.Element => {
     </Typography>
   )
 }
-
-export const Content: React.FC = () => {
+type ContentProps = {chainId: string}
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+export const Content: React.FC<ContentProps> = ({chainId}: ContentProps) => {
   const { theme }: ThemeContextType = useTheme()
   const themedImage = theme === 'light' ? lightCosmos.src : darkCosmos.src
   loadTranslations(translationsToLoad)
@@ -53,7 +54,7 @@ export const Content: React.FC = () => {
     <div className="okp4-faucet-testnet-content" style={{ backgroundImage: `url(${themedImage})` }}>
       <Header firstElement={<Logo size="small" />} />
       <div className="okp4-faucet-content">
-        <Faucet chainId={process.env.CHAIN_ID} />
+        <Faucet chainId={chainId} />
       </div>
       <Footer languages={languages} lastElement={<Okp4Link />} />
     </div>
