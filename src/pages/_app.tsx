@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import type { Config } from "../config/config.type"
+import type { Config } from '../config/config.type'
 import dynamic from 'next/dynamic'
 import './styles.scss'
 import { useEffect, useState } from 'react'
@@ -20,22 +20,22 @@ const fetchConfig = async (): Promise<Config> => {
 }
 
 // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
-function MyApp({ Component, pageProps }: AppProps): JSX.Element|null {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element | null {
   // eslint-disable-next-line @typescript-eslint/typedef
-  const [config, setConfig] = useState<Config|null>(null)
+  const [config, setConfig] = useState<Config | null>(null)
   useEffect(() => {
     fetchConfig()
       .then(setConfig)
       .catch((error: unknown) => console.error(error))
   }, [])
 
-  return config?(
+  return config ? (
     <ThemeProvider>
       <StoreProvider config={config}>
         <Component {...pageProps} chainId={config.chain.id} />
       </StoreProvider>
     </ThemeProvider>
-  ): null
+  ) : null
 }
 
 export default MyApp

@@ -28,15 +28,15 @@ export const storeParameters = (config: Config): List<StoreParameter> => {
     .withDependencies({ faucetGateway })
     .build()
   const faucetStoreParameter: StoreParameter = [FaucetContext, faucetStore]
-  
+
   // Error
   const errorStore = new ErrorStoreBuilder().withEventBus(eventBusInstance).build()
   const errorStoreParameter: StoreParameter = [ErrorContext, errorStore]
-  
+
   // Task
   const taskStore = new TaskStoreBuilder().withEventBus(eventBusInstance).build()
   const taskStoreParameter: StoreParameter = [TaskContext, taskStore]
-  
+
   // Wallet
   const walletRegistryGateway = new WalletRegistryGateway()
   const keplrGateway = new KeplrWalletGateway(keplrChainConfig(config.chain))
@@ -47,10 +47,5 @@ export const storeParameters = (config: Config): List<StoreParameter> => {
     .build()
   const walletStoreParameter: StoreParameter = [WalletContext, walletStore]
 
-  return List([
-    faucetStoreParameter,
-    errorStoreParameter,
-    walletStoreParameter,
-    taskStoreParameter
-  ])
+  return List([faucetStoreParameter, errorStoreParameter, walletStoreParameter, taskStoreParameter])
 }

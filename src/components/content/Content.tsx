@@ -43,9 +43,9 @@ const Okp4Link = (): JSX.Element => {
     </Typography>
   )
 }
-type ContentProps = {chainId: string}
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
-export const Content: React.FC<ContentProps> = ({chainId}: ContentProps) => {
+type ContentProps = { chainId: string }
+
+export const Content: React.FC<ContentProps> = ({ chainId }: Readonly<ContentProps>) => {
   const { theme }: ThemeContextType = useTheme()
   const themedImage = theme === 'light' ? lightCosmos.src : darkCosmos.src
   loadTranslations(translationsToLoad)

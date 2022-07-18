@@ -8,7 +8,10 @@ type ProviderProps = {
   children: React.ReactElement
 }
 
-const StoreProvider: React.FC<ProviderProps> = ({ config, children }: DeepReadonly<ProviderProps>) => (
+const StoreProvider: React.FC<ProviderProps> = ({
+  config,
+  children
+}: DeepReadonly<ProviderProps>) => (
   <ReduxStoreProvider storeParameters={storeParameters(config)}>{children}</ReduxStoreProvider>
 )
 
