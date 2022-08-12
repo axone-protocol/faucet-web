@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element | null {
   return config ? (
     <ThemeProvider>
       <StoreProvider config={config}>
-        <Component {...pageProps} chainId={config.chain.id} title={config.app.title} />
+        <Component {...pageProps} chainId={config.chain.id} keywords={config.app.keywords} title={config.app.title} />
       </StoreProvider>
     </ThemeProvider>
   ) : null

@@ -1,6 +1,7 @@
 export type Config = {
   app: {
     title: string
+    keywords: string
   }
   chain: Chain
   faucet: string

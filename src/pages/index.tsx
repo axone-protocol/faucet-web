@@ -9,12 +9,18 @@ const ContentWithoutSSR = dynamic(async () => import('../components/content/Cont
   ssr: false
 })
 
-const Home: NextPage<{ title: string, chainId: string }> = ({ title, chainId }: Readonly<{ title:string, chainId: string }>) => {
+type HomeProps = {
+  title: string
+  keywords: string
+  chainId: string
+}
+
+const Home: NextPage<HomeProps> = ({ title, keywords, chainId }: Readonly<HomeProps>) => {
   return (
     <div className="okp4-faucet-testnet-main">
       <Head>
         <title>{title}</title>
-        <meta content="OKP4, Faucet, Blockchain, Know, Testnet, Token" name="keywords" />
+        <meta content={keywords} name="keywords" />
         <link href="/okp4-logo.png" rel="icon" />
       </Head>
 
