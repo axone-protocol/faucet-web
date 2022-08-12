@@ -1,5 +1,6 @@
 declare namespace NodeJS {
   interface ProcessEnv {
+    APP_TITLE: string
     CHAIN_ID: string
     FAUCET_URL: string
     CHAIN_NAME: string

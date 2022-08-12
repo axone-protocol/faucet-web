@@ -1,4 +1,7 @@
 export type Config = {
+  app: {
+    title: string
+  }
   chain: Chain
   faucet: string
 }

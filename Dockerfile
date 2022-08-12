@@ -28,6 +28,7 @@ WORKDIR /app
 
 ENV NODE_ENV=production \
   NEXT_TELEMETRY_DISABLED=1 \
+  APP_TITLE="OKP4 Faucet devnet" \
   CHAIN_ID="okp4-devnet-1" \
   CHAIN_NAME="OKP4" \
   CHAIN_RPC_ENDPOINT="https://api.devnet.staging.okp4.network:443/rpc" \
