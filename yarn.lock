@@ -170,10 +170,10 @@
     tsutils ">=3.21.0"
     typescript ">=4.6.2"
 
-"@okp4/ui@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-1.10.0.tgz#7977d5e9bcd39b3af689604ee371de3696a342b3"
-  integrity sha512-bFdL6VRZ1bCoi8C4mk2xMxTdVA0MVUFnU0nIY3RlpTSAp14ey9+Zz3Fi6FjM10gG2qV6pslcnGoTnv8Tj6gVxg==
+"@okp4/ui@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-1.11.0.tgz#5f81cf53c3ce0212db4fdc2160a11b52d777a015"
+  integrity sha512-GNR012TvUtGitaFg8xgDePdU/LPfMm2ElRamGMBNT96AvW/Ig59X3/0MwjYdJRGCXS95gVXxcAkdrSPuLVGACQ==
   dependencies:
     "@radix-ui/react-switch" "^1.0.0"
     "@radix-ui/react-toast" "^1.0.0"
@@ -191,6 +191,7 @@
     redux-thunk "^2.4.1"
     reselect "^4.1.5"
     short-uuid "^4.2.0"
+    svgxuse "^1.2.6"
     ts-bus "^2.3.1"
 
 "@radix-ui/primitive@1.0.0":
@@ -2195,6 +2196,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+svgxuse@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/svgxuse/-/svgxuse-1.2.6.tgz#d6251edd07a75cb28618e0c23e8d4db64936d6be"
+  integrity sha512-0KC0I24LDskC2vaVjUQfFmdtKJk8wFwMYOjCci0HlhBRSc0F86dZRqNBHf6BoS5bibQ7chgnBQWyJCTYkzVuSA==
 
 text-table@^0.2.0:
   version "0.2.0"
