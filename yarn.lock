@@ -175,20 +175,21 @@
     tsutils ">=3.21.0"
     typescript ">=4.6.2"
 
-"@okp4/ui@^1.11.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-1.11.0.tgz#5f81cf53c3ce0212db4fdc2160a11b52d777a015"
-  integrity sha512-GNR012TvUtGitaFg8xgDePdU/LPfMm2ElRamGMBNT96AvW/Ig59X3/0MwjYdJRGCXS95gVXxcAkdrSPuLVGACQ==
+"@okp4/ui@^1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-1.12.1.tgz#13d1e047b93a59aa99e5973da019f3bacab1ab23"
+  integrity sha512-CpaB1pEo0ddGYqA1RSRtyLalwDLioZtCfKUm1htwbQnUVIHN7cMXz54PVK7zkY8a4/neryIPwpUbSZF7LY6ynw==
   dependencies:
     "@radix-ui/react-switch" "^1.0.0"
     "@radix-ui/react-toast" "^1.0.0"
-    "@urql/core" "^2.5.0"
+    "@urql/core" "^3.0.1"
     bech32-buffer "^0.2.0"
     classnames "^2.3.1"
     graphql "^16.5.0"
     i18next "^21.6.16"
     i18next-browser-languagedetector "^6.1.4"
     immutable "^4.1.0"
+    lodash "^4.17.21"
     react-i18next "^11.16.7"
     react-redux "^8.0.2"
     redux "^4.1.2"
@@ -562,13 +563,13 @@
     "@typescript-eslint/types" "5.35.1"
     eslint-visitor-keys "^3.3.0"
 
-"@urql/core@^2.5.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@urql/core/-/core-2.6.0.tgz#1ce8b3a471312986378ce42ea800478595239315"
-  integrity sha512-JuIbzDu2oASSe+m5u410ceqWQGTF6QK5W/UZaHuzQX+I2wX4aVdPN/NeZnaFFqG3UYw3+ttFHpQK0vrsU6QLFw==
+"@urql/core@^3.0.1":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@urql/core/-/core-3.0.2.tgz#91008bc112000dd42c5260142e4eed7901def6bd"
+  integrity sha512-TRpQOdt1Mtpt/EgPlFCx9Aqc3TbHtzH3yj8pJ9yjSUKT4slRyy+ofMQ8yx50oZzZjAOswF02zBRwnxsZANb35A==
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
-    wonka "^4.0.14"
+    wonka "^6.0.0"
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
@@ -1643,6 +1644,11 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -2320,10 +2326,10 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-wonka@^4.0.14:
-  version "4.0.15"
-  resolved "https://registry.yarnpkg.com/wonka/-/wonka-4.0.15.tgz#9aa42046efa424565ab8f8f451fcca955bf80b89"
-  integrity sha512-U0IUQHKXXn6PFo9nqsHphVCE5m3IntqZNB9Jjn7EB1lrR7YTDY3YWgFvEvwniTzXSvOH/XMzAZaIfJF/LvHYXg==
+wonka@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/wonka/-/wonka-6.0.0.tgz#38cd39a517fc3ff721ea3bf353642b353bf48860"
+  integrity sha512-TEiIOqkhQXbcmL1RrjxPCzTX15V5FSyJvZRSiTxvgTgrJMaOVKmzGTdRVh349CfaNo9dsIhWDyg1/GNq4NWrEg==
 
 word-wrap@^1.2.3:
   version "1.2.3"
