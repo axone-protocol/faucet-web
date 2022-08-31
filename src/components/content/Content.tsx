@@ -1,17 +1,8 @@
-import {
-  Faucet,
-  Footer,
-  Header,
-  loadTranslations,
-  Typography,
-  useTheme,
-  useTranslation,
-  Logo
-} from '@okp4/ui'
+import { Faucet, Footer, Header, Typography, useTheme, useTranslation, Logo } from '@okp4/ui'
 import type { ThemeContextType, UseTranslationResponse } from '@okp4/ui'
 import lightCosmos from '@okp4/ui/lib/assets/images/cosmos-clear.png'
 import darkCosmos from '@okp4/ui/lib/assets/images/cosmos-dark.png'
-import { translationsToLoad } from '../../i18n/index'
+import '../../i18n/index'
 
 const languages = [
   {
@@ -48,7 +39,6 @@ type ContentProps = { chainId: string }
 export const Content: React.FC<ContentProps> = ({ chainId }: Readonly<ContentProps>) => {
   const { theme }: ThemeContextType = useTheme()
   const themedImage = theme === 'light' ? lightCosmos.src : darkCosmos.src
-  loadTranslations(translationsToLoad)
 
   return (
     <div className="okp4-faucet-testnet-content" style={{ backgroundImage: `url(${themedImage})` }}>
