@@ -175,10 +175,10 @@
     tsutils ">=3.21.0"
     typescript ">=4.6.2"
 
-"@okp4/ui@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-1.12.1.tgz#13d1e047b93a59aa99e5973da019f3bacab1ab23"
-  integrity sha512-CpaB1pEo0ddGYqA1RSRtyLalwDLioZtCfKUm1htwbQnUVIHN7cMXz54PVK7zkY8a4/neryIPwpUbSZF7LY6ynw==
+"@okp4/ui@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-1.13.0.tgz#91cca2c287aa1ffcae25bb3519f529b69b1e35fc"
+  integrity sha512-11h2G4TTwFTwu99422b77JLjDKpuOHN+vuNHBMuBV5KIN9hfC/Q90cUXJmnmzEwHm/41+lxgKpdli0qkhHIHxg==
   dependencies:
     "@radix-ui/react-switch" "^1.0.0"
     "@radix-ui/react-toast" "^1.0.0"
@@ -186,6 +186,7 @@
     bech32-buffer "^0.2.0"
     classnames "^2.3.1"
     graphql "^16.5.0"
+    graphql-ws "^5.10.0"
     i18next "^21.6.16"
     i18next-browser-languagedetector "^6.1.4"
     immutable "^4.1.0"
@@ -1336,6 +1337,11 @@ grapheme-splitter@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
+
+graphql-ws@^5.10.0:
+  version "5.10.1"
+  resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.10.1.tgz#c5402a62f1be13e244ab90a6306b94f643577312"
+  integrity sha512-MKm/3SRd1vj5Km8NaujsgeGRTKZQjUN5HRnIMJ8dL2UznKoxvrtQyJqTmqJt0f6vQd9AooDg/+baXo3huiY4Ew==
 
 graphql@^16.5.0:
   version "16.5.0"
