@@ -1,6 +1,6 @@
 {
   "name": "@okp4/faucet-web",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "repository": "git@github.com:okp4/faucet-web.git",
   "license": "BSD-3-Clause",

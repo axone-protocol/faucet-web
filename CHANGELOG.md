@@ -1,5 +1,7 @@
 # ØKP4 Faucet-Web changelog
 
+## [1.0.5](https://github.com/okp4/faucet-web/compare/v1.0.4...v1.0.5) (2022-09-07)
+
 ## [1.0.4](https://github.com/okp4/faucet-web/compare/v1.0.3...v1.0.4) (2022-08-31)
 
 ## [1.0.3](https://github.com/okp4/faucet-web/compare/v1.0.2...v1.0.3) (2022-08-17)
