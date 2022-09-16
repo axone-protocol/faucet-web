@@ -19,9 +19,9 @@ const Okp4Link = (): JSX.Element => {
   const { t }: UseTranslationResponse = useTranslation()
 
   return (
-    <Typography as="p" color="highlighted-text" fontSize="x-small" fontWeight="xlight" noWrap>
+    <Typography as="p" color="invariant-text" fontSize="x-small" fontWeight="xlight" noWrap>
       {`${t('footer:brand-link')} `}
-      <Typography color="highlighted-text" fontSize="x-small" fontWeight="bold">
+      <Typography color="invariant-text" fontSize="x-small" fontWeight="bold">
         <a
           className="okp4-brand-link"
           href="https://okp4.network/"
