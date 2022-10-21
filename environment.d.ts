@@ -9,3 +9,13 @@ declare namespace NodeJS {
     CHAIN_REST_ENDPOINT: string
   }
 }
+
+declare module 'next/config' {
+  declare const _default: () => {
+    publicRuntimeConfig: {
+      version: string
+    }
+  }
+
+  export default _default
+}

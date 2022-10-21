@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
+const { version } = require('./package.json');
 const nextConfig = {
   reactStrictMode: true,
+  publicRuntimeConfig: {
+    version,
+  },
   serverRuntimeConfig: {
     APP_TITLE: "OKP4 Faucet devnet",
     APP_KEYWORDS: "OKP4, Faucet, Blockchain, Know, Devnet, Token",
