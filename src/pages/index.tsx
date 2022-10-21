@@ -1,5 +1,6 @@
 import React from 'react'
 import type { NextPage } from 'next'
+import getConfig from 'next/config'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
@@ -8,6 +9,9 @@ import dynamic from 'next/dynamic'
 const ContentWithoutSSR = dynamic(async () => import('../components/content/Content'), {
   ssr: false
 })
+
+// eslint-disable-next-line @typescript-eslint/typedef
+const { publicRuntimeConfig } = getConfig()
 
 type HomeProps = {
   title: string
@@ -22,6 +26,7 @@ const Home: NextPage<HomeProps> = ({ title, keywords, chainId }: Readonly<HomePr
         <title>{title}</title>
         <meta content={keywords} name="keywords" />
         <link href="/okp4-logo.png" rel="icon" />
+        <meta content={publicRuntimeConfig.version} name="version" />
       </Head>
 
       <ContentWithoutSSR chainId={chainId} />
