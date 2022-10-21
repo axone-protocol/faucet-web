@@ -1,5 +1,13 @@
 # ØKP4 Faucet-Web changelog
 
+## [1.0.6](https://github.com/okp4/faucet-web/compare/v1.0.5...v1.0.6) (2022-10-21)
+
+
+### Bug Fixes
+
+* change footer text color to a remaining white color ([d6038a5](https://github.com/okp4/faucet-web/commit/d6038a5f626f8470b4a9c3a03c81dbde272e3b95))
+* **release:** rearrange conventionalcommits preset ([ab6d00a](https://github.com/okp4/faucet-web/commit/ab6d00a1022a52c5fa982ca724693463f93fb17f))
+
 ## [1.0.5](https://github.com/okp4/faucet-web/compare/v1.0.4...v1.0.5) (2022-09-07)
 
 ## [1.0.4](https://github.com/okp4/faucet-web/compare/v1.0.3...v1.0.4) (2022-08-31)
