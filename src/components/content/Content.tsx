@@ -1,8 +1,11 @@
+import getConfig from 'next/config'
 import { Faucet, Footer, Header, Typography, useTheme, useTranslation, Logo } from '@okp4/ui'
 import type { ThemeContextType, UseTranslationResponse } from '@okp4/ui'
 import lightCosmos from '@okp4/ui/lib/assets/images/cosmos-clear.png'
 import darkCosmos from '@okp4/ui/lib/assets/images/cosmos-dark.png'
 import '../../i18n/index'
+
+const { publicRuntimeConfig }: { publicRuntimeConfig?: {version: string} } = getConfig()
 
 const languages = [
   {
@@ -31,6 +34,7 @@ const Okp4Link = (): JSX.Element => {
           ØKP4
         </a>
       </Typography>
+      <Typography color="invariant-text" fontSize="x-small" fontWeight="xlight"> - v{publicRuntimeConfig?.version}</Typography>
     </Typography>
   )
 }
