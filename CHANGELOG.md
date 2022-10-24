@@ -1,5 +1,13 @@
 # ØKP4 Faucet-Web changelog
 
+## [1.1.0](https://github.com/okp4/faucet-web/compare/v1.0.6...v1.1.0) (2022-10-24)
+
+
+### Features
+
+* add version to html metadata ([c4c37e5](https://github.com/okp4/faucet-web/commit/c4c37e5edfd19b2da6c425707dad363cf79e8e3c))
+* display current version in footer ([2088f3a](https://github.com/okp4/faucet-web/commit/2088f3a58ccbd61779bcc18dc3538729770c52d7))
+
 ## [1.0.6](https://github.com/okp4/faucet-web/compare/v1.0.5...v1.0.6) (2022-10-21)
 
 
