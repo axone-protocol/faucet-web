@@ -1,8 +1,6 @@
 #-------------
 FROM node:16.18-alpine AS deps
 
-RUN apk add --no-cache libc6-compat=1.2.3-r0
-
 WORKDIR /app
 
 COPY package.json yarn.lock ./
@@ -27,28 +25,18 @@ FROM node:16.18-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production \
-  NEXT_TELEMETRY_DISABLED=1 \
-  APP_TITLE="OKP4 Faucet devnet" \
-  APP_KEYWORDS="OKP4, Faucet, Blockchain, Know, Devnet, Token" \
-  CHAIN_ID="okp4-devnet-1" \
-  CHAIN_NAME="OKP4" \
-  CHAIN_RPC_ENDPOINT="https://api.devnet.staging.okp4.network:443/rpc" \
-  CHAIN_REST_ENDPOINT="https://api.devnet.staging.okp4.network" \
-  FAUCET_URL="https://faucet.devnet.staging.okp4.network/graphql"
+  NEXT_TELEMETRY_DISABLED=1 
 
 RUN \
   addgroup --system --gid 1001 nodejs && \
   adduser --system --uid 1001 nextjs
 
 COPY --from=builder /app/public ./public
-COPY --from=builder /app/package.json ./package.json
 
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
-
-EXPOSE 3000
 
 ENV PORT 3000
 
