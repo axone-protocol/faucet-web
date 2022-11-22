@@ -7,8 +7,8 @@ body {
   padding: 0;
   height: 100%;
 
-  div#__next,
-  div#__next > div {
+  > div:first-of-type,
+  > div:first-of-type > div:first-of-type {
     height: 100%;
   }
 }
