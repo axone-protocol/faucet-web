@@ -214,10 +214,10 @@
     tsutils ">=3.21.0"
     typescript ">=4.6.2"
 
-"@okp4/ui@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-2.1.0.tgz#4ff99de39506b0756187589d4df4a1d7538b6816"
-  integrity sha512-7/U0bstKbQe2Sd02ZActFG08E7xnnINredMTj+BTPRi2lPagLdK9MCvwJaHjATv0cI73p86p/4xjSB54qBqL2A==
+"@okp4/ui@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-4.0.0.tgz#f4b415bb72db9205a09c7bb7ea4f1834443a4340"
+  integrity sha512-UdG1kgZHK3X+FHExGhBa6kQ02C4WX7fxcByQimIhvngr0TDhRuHAy7sEn+qe9iCxlV2AUx9tRmliEKvTLz6IhA==
   dependencies:
     "@javelin/ecs" "^1.0.0-alpha.13"
     "@radix-ui/react-switch" "^1.0.0"
