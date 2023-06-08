@@ -1,6 +1,7 @@
 import getConfig from 'next/config'
+import type { Captcha } from '../../config/config.type'
 import { Faucet, Footer, Header, Typography, useTheme, useTranslation, Logo } from '@okp4/ui'
-import type { ThemeContextType, UseTranslationResponse } from '@okp4/ui'
+import type { DeepReadonly, Theme, ThemeContextType, UseTranslationResponse } from '@okp4/ui'
 import lightCosmos from '@okp4/ui/lib/assets/images/cosmos-clear.png'
 import darkCosmos from '@okp4/ui/lib/assets/images/cosmos-dark.png'
 import '../../i18n/index'
@@ -39,17 +40,21 @@ const Okp4Link = (): JSX.Element => {
     </Typography>
   )
 }
-type ContentProps = { chainId: string }
+type ContentProps = { chainId: string; captcha: Captcha }
 
-export const Content: React.FC<ContentProps> = ({ chainId }: Readonly<ContentProps>) => {
+export const Content: React.FC<ContentProps> = ({
+  chainId,
+  captcha
+}: DeepReadonly<ContentProps>) => {
   const { theme }: ThemeContextType = useTheme()
   const themedImage = theme === 'light' ? lightCosmos.src : darkCosmos.src
+  const captchaParameters = { APIKey: captcha.recaptchaV2.siteKey, theme: 'light' as Theme }
 
   return (
     <div className="okp4-faucet-testnet-content" style={{ backgroundImage: `url(${themedImage})` }}>
       <Header firstElement={<Logo size="small" />} />
       <div className="okp4-faucet-content">
-        <Faucet chainId={chainId} />
+        <Faucet captcha={captchaParameters} chainId={chainId} />
       </div>
       <Footer languages={languages} lastElement={<Okp4Link />} />
     </div>

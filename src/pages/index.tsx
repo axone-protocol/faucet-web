@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import getConfig from 'next/config'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import type { Captcha } from '../config/config.type'
 
 // Components using document or window elements must disable ssr to be used on client side
 // https://nextjs.org/docs/advanced-features/dynamic-import#with-no-ssr
@@ -17,9 +18,11 @@ type HomeProps = {
   title: string
   keywords: string
   chainId: string
+  captcha: Captcha
 }
 
-const Home: NextPage<HomeProps> = ({ title, keywords, chainId }: Readonly<HomeProps>) => {
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+const Home: NextPage<HomeProps> = ({ title, keywords, chainId, captcha }: Readonly<HomeProps>) => {
   return (
     <div className="okp4-faucet-testnet-main">
       <Head>
@@ -29,7 +32,7 @@ const Home: NextPage<HomeProps> = ({ title, keywords, chainId }: Readonly<HomePr
         <meta content={publicRuntimeConfig.version} name="version" />
       </Head>
 
-      <ContentWithoutSSR chainId={chainId} />
+      <ContentWithoutSSR captcha={captcha} chainId={chainId} />
     </div>
   )
 }
