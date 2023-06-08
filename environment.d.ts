@@ -7,6 +7,7 @@ declare namespace NodeJS {
     CHAIN_NAME: string
     CHAIN_RPC_ENDPOINT: string
     CHAIN_REST_ENDPOINT: string
+    RECAPTCHA_V2_SITEKEY: string
   }
 }
 

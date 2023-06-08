@@ -5,6 +5,7 @@ export type Config = {
   }
   chain: Chain
   faucet: string
+  captcha: Captcha
 }
 
 export type Chain = {
@@ -13,5 +14,10 @@ export type Chain = {
   endpoints: {
     rpc: string
     rest: string
+  }
+}
+export type Captcha = {
+  recaptchaV2: {
+    siteKey: string
   }
 }
