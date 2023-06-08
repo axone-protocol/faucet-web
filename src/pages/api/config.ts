@@ -16,7 +16,12 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse): voi
         rest: process.env.CHAIN_REST_ENDPOINT
       }
     },
-    faucet: process.env.FAUCET_URL
+    faucet: process.env.FAUCET_URL,
+    captcha: {
+      recaptchaV2: {
+        siteKey: process.env.RECAPTCHA_V2_SITEKEY
+      }
+    }
   }
   res.status(200).json(cfg)
 }
