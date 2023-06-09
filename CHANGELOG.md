@@ -1,5 +1,13 @@
 # ØKP4 Faucet-Web changelog
 
+## [1.1.1](https://github.com/okp4/faucet-web/compare/v1.1.0...v1.1.1) (2023-06-09)
+
+
+### Bug Fixes
+
+* **release:** remove commit-analyser release rules ([615417e](https://github.com/okp4/faucet-web/commit/615417ede1234d2aa06f7f9e9045acc0fa87eef8))
+* **style:** replace id selectors ([1837e3b](https://github.com/okp4/faucet-web/commit/1837e3b91e524011ba24ed4d387292c34f24ffce))
+
 ## [1.1.0](https://github.com/okp4/faucet-web/compare/v1.0.6...v1.1.0) (2022-10-24)
 
 
