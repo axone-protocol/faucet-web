@@ -1,5 +1,12 @@
 # ØKP4 Faucet-Web changelog
 
+## [1.2.0](https://github.com/okp4/faucet-web/compare/v1.1.1...v1.2.0) (2023-06-09)
+
+
+### Features
+
+* **faucet:** add captcha ([d856713](https://github.com/okp4/faucet-web/commit/d85671314ebed64f63be50b2ae670fabaf9f26c7))
+
 ## [1.1.1](https://github.com/okp4/faucet-web/compare/v1.1.0...v1.1.1) (2023-06-09)
 
 
