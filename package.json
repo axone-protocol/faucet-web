@@ -30,7 +30,7 @@
     "@okp4/ui": "^5.1.1",
     "@types/node": "18.11.17",
     "@types/react": "18.2.11",
-    "@types/react-dom": "18.0.10",
+    "@types/react-dom": "18.2.5",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "eslint": "8.32.0",
     "eslint-config-next": "12.3.1",
