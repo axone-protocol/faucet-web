@@ -1179,10 +1179,10 @@
     tsutils ">=3.21.0"
     typescript ">=4.6.2"
 
-"@okp4/ui@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-5.1.0.tgz#464da80a912fa301926ee9683f64ab1020a888d6"
-  integrity sha512-6tAzsSWnOPJTBe3f+w4/KVQOvAJPm/Nin1qNBfit1ADGoRarnDG2okyE88BWe+7KHlE/Ai6lpIhMyUSwoKfdPA==
+"@okp4/ui@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@okp4/ui/-/ui-5.1.1.tgz#496c99edadbb04a010b885903d278074c2ea2aec"
+  integrity sha512-idJP/MIXcEdz3zlgxqrbCoqNv2ypa9BAK42DIU2mVsjDlPKD5g7N8nK9t8NU1j+geHn172CtsicJuSFE8yDRaA==
   dependencies:
     "@aws-sdk/client-s3" "^3.171.0"
     "@aws-sdk/lib-storage" "^3.171.0"
