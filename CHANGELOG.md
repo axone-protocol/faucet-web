@@ -1,5 +1,12 @@
 # ØKP4 Faucet-Web changelog
 
+## [1.2.1](https://github.com/okp4/faucet-web/compare/v1.2.0...v1.2.1) (2023-06-14)
+
+
+### Bug Fixes
+
+* bump okp4 ui version ([1bb74f1](https://github.com/okp4/faucet-web/commit/1bb74f113fc5450744f0f45d40859fddb99c2688))
+
 ## [1.2.0](https://github.com/okp4/faucet-web/compare/v1.1.1...v1.2.0) (2023-06-09)
 
 
