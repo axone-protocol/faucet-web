@@ -20,7 +20,7 @@ const languages = [
   }
 ]
 
-const Okp4Link = (): JSX.Element => {
+const AxoneLink = (): JSX.Element => {
   const { t }: UseTranslationResponse = useTranslation()
 
   return (
@@ -28,12 +28,12 @@ const Okp4Link = (): JSX.Element => {
       {`${t('footer:brand-link')} `}
       <Typography color="invariant-text" fontSize="x-small" fontWeight="bold">
         <a
-          className="okp4-brand-link"
-          href="https://okp4.network/"
+          className="axone-brand-link"
+          href="https://axone.xyz/"
           rel="author noreferrer"
           target="_blank"
         >
-          ØKP4
+          AXONE
         </a>
       </Typography>
       <Typography color="invariant-text" fontSize="x-small" fontWeight="xlight"> - v{publicRuntimeConfig.version}</Typography>
@@ -51,12 +51,12 @@ export const Content: React.FC<ContentProps> = ({
   const captchaParameters = { APIKey: captcha.recaptchaV2.siteKey, theme: 'light' as Theme }
 
   return (
-    <div className="okp4-faucet-testnet-content" style={{ backgroundImage: `url(${themedImage})` }}>
+    <div className="axone-faucet-testnet-content" style={{ backgroundImage: `url(${themedImage})` }}>
       <Header firstElement={<Logo size="small" />} />
-      <div className="okp4-faucet-content">
+      <div className="axone-faucet-content">
         <Faucet captcha={captchaParameters} chainId={chainId} />
       </div>
-      <Footer languages={languages} lastElement={<Okp4Link />} />
+      <Footer languages={languages} lastElement={<AxoneLink />} />
     </div>
   )
 }

@@ -8,7 +8,7 @@ plugins:
     - preset: conventionalcommits
   - - "@semantic-release/changelog"
     - changelogFile: CHANGELOG.md
-      changelogTitle: "# ØKP4 Faucet-Web changelog"
+      changelogTitle: "# AXONE Faucet-Web changelog"
   - - "@semantic-release/npm"
     - npmPublish: false
       tarballDir: "false"
