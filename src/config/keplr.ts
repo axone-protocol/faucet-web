@@ -12,30 +12,30 @@ const keplrChainConfig = (chain: Chain) => [
       coinType: 118
     },
     bech32Config: {
-      bech32PrefixAccAddr: 'okp4',
-      bech32PrefixAccPub: 'okp4pub',
-      bech32PrefixValAddr: 'okp4valoper',
-      bech32PrefixValPub: 'okp4valoperpub',
-      bech32PrefixConsAddr: 'okp4valcons',
-      bech32PrefixConsPub: 'okp4valconspub'
+      bech32PrefixAccAddr: 'axone',
+      bech32PrefixAccPub: 'axonepub',
+      bech32PrefixValAddr: 'axonevaloper',
+      bech32PrefixValPub: 'axonevaloperpub',
+      bech32PrefixConsAddr: 'axonevalcons',
+      bech32PrefixConsPub: 'axonevalconspub'
     },
     currencies: [
       {
-        coinDenom: 'KNOW',
-        coinMinimalDenom: 'uknow',
+        coinDenom: 'AXONE',
+        coinMinimalDenom: 'uaxone',
         coinDecimals: 6
       }
     ],
     feeCurrencies: [
       {
-        coinDenom: 'KNOW',
-        coinMinimalDenom: 'uknow',
+        coinDenom: 'AXONE',
+        coinMinimalDenom: 'uaxone',
         coinDecimals: 6
       }
     ],
     stakeCurrency: {
-      coinDenom: 'KNOW',
-      coinMinimalDenom: 'uknow',
+      coinDenom: 'AXONE',
+      coinMinimalDenom: 'uaxone',
       coinDecimals: 6
     },
     coinType: 118,
