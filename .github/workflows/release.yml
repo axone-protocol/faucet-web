@@ -22,7 +22,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.OKP4_TOKEN }}
+          token: ${{ secrets.OPS_TOKEN }}
 
       - name: Set up node
         uses: actions/setup-node@v2
@@ -41,8 +41,8 @@ jobs:
           extends: |
             conventional-changelog-conventionalcommits
         env:
-          GITHUB_TOKEN: ${{ secrets.OKP4_TOKEN }}
-          GIT_AUTHOR_NAME: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }}
-          GIT_AUTHOR_EMAIL: ${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}
-          GIT_COMMITTER_NAME: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
-          GIT_COMMITTER_EMAIL: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
+          GITHUB_TOKEN: ${{ secrets.OPS_TOKEN }}
+          GIT_AUTHOR_NAME: ${{ vars.BOT_GIT_AUTHOR_NAME }}
+          GIT_AUTHOR_EMAIL: ${{ vars.BOT_GIT_AUTHOR_EMAIL }}
+          GIT_COMMITTER_NAME: ${{ vars.BOT_GIT_COMMITTER_NAME }}
+          GIT_COMMITTER_EMAIL: ${{ vars.BOT_GIT_COMMITTER_EMAIL }}
