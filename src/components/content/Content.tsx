@@ -1,10 +1,11 @@
 import getConfig from 'next/config'
 import type { Captcha } from '../../config/config.type'
-import { Faucet, Footer, Header, Typography, useTheme, useTranslation, Logo } from '@okp4/ui'
+import { Faucet, Footer, Header, Typography, useTheme, useTranslation } from '@okp4/ui'
 import type { DeepReadonly, Theme, ThemeContextType, UseTranslationResponse } from '@okp4/ui'
 import lightCosmos from '@okp4/ui/lib/assets/images/cosmos-clear.png'
 import darkCosmos from '@okp4/ui/lib/assets/images/cosmos-dark.png'
 import '../../i18n/index'
+import { Logo } from '../logo/Logo'
 
 // eslint-disable-next-line @typescript-eslint/typedef
 const { publicRuntimeConfig } = getConfig()
@@ -52,7 +53,7 @@ export const Content: React.FC<ContentProps> = ({
 
   return (
     <div className="axone-faucet-testnet-content" style={{ backgroundImage: `url(${themedImage})` }}>
-      <Header firstElement={<Logo size="small" />} />
+      <Header firstElement={<Logo size="large" />} />
       <div className="axone-faucet-content">
         <Faucet captcha={captchaParameters} chainId={chainId} />
       </div>
