@@ -1,14 +1,14 @@
 {
-  "name": "@okp4/faucet-web",
+  "name": "@axone/faucet-web",
   "version": "1.2.1",
   "private": false,
-  "repository": "git@github.com:okp4/faucet-web.git",
+  "repository": "git@github.com:axone-protocol/faucet-web.git",
   "license": "BSD-3-Clause",
-  "description": "Token faucet web app for the ØKP4 network testnets.",
-  "homepage": "https://github.com/okp4/faucet-web",
+  "description": "Token faucet web app for the AXONE network testnets.",
+  "homepage": "https://github.com/axone-protocol/faucet-web",
   "author": {
-    "name": "OKP4",
-    "web": "https://okp4.network"
+    "name": "AXONE",
+    "web": "https://axone.xyz"
   },
   "engines": {
     "node": "^16.18.0",
