@@ -31,6 +31,7 @@ export const Logo: React.FC<LogoProps> = ({ size = 'medium', type = 'logo' }: Lo
 
   return (
     <svg className={imageClassname}>
+      <title>{`AXONE ${type}`}</title>
       <use href={`logos/sprite.svg#${type}-axone-${theme}`} />
     </svg>
   )
