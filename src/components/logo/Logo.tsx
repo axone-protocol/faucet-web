@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import React from 'react'
-import { useTheme, ThemeContextType } from '@okp4/ui'
+import { useTheme } from '@okp4/ui'
+import type { ThemeContextType } from '@okp4/ui'
 import './logo.module.scss'
 import 'svgxuse' // svg sprite polyfill
 
