@@ -11,7 +11,7 @@
     "operationSucceeded": "Votre transaction a été envoyée avec succès!",
     "brand": {
       "title": "AXONE Faucet",
-      "description": "Bonjour camarade! Utilisez ce faucet afin d'obtenir des jetons pour la chaîne {{env}}. Veuillez ne pas abuser de ce service - le nombre de jetons disponibles est limité."
+      "description": "Salutations, explorateur web3 ! Réclamez votre jeton AXONE sur la chaîne {{env}} pour lancer votre voyage dans l'écosystème Axone. N'oubliez pas qu'il s'agit d'une ressource partagée - la disponibilité des jetons est limitée."
     },
     "info": {
       "limitation": "Vous recevrez 1 AXONE par demande, avec un maximum de 1 demande toutes les heures.",

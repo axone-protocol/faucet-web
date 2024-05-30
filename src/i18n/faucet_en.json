@@ -11,7 +11,7 @@
     "operationSucceeded": "Your transaction has been successfully sent!",
     "brand": {
       "title": "AXONE Faucet",
-      "description": "Hello fellow data space invader! Use this faucet to get tokens for the {{env}} chain. Please don't abuse this service—the number of available tokens is limited."
+      "description": "Greetings, web3 explorer! Claim your AXONE token for the {{env}} chain to kickstart your journey in the Axone ecosystem. Remember, this is a shared resource—the availability of tokens is limited."
     },
     "info": {
       "limitation": "You'll receive 1 AXONE per request, with a maximum of 1 request every hour.",
