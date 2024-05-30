@@ -28,7 +28,7 @@ const Home: NextPage<HomeProps> = ({ title, keywords, chainId, captcha }: Readon
       <Head>
         <title>{title}</title>
         <meta content={keywords} name="keywords" />
-        <link href="/okp4-logo.png" rel="icon" />
+        <link href="/favicon.svg" rel="icon" />
         <meta content={publicRuntimeConfig.version} name="version" />
       </Head>
 
