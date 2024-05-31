@@ -24,11 +24,11 @@ type HomeProps = {
 // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 const Home: NextPage<HomeProps> = ({ title, keywords, chainId, captcha }: Readonly<HomeProps>) => {
   return (
-    <div className="okp4-faucet-testnet-main">
+    <div className="axone-faucet-testnet-main">
       <Head>
         <title>{title}</title>
         <meta content={keywords} name="keywords" />
-        <link href="/okp4-logo.png" rel="icon" />
+        <link href="/favicon.svg" rel="icon" />
         <meta content={publicRuntimeConfig.version} name="version" />
       </Head>
 

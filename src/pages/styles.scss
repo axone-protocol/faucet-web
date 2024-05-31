@@ -13,13 +13,13 @@ body {
   }
 }
 
-.okp4-faucet-testnet-main {
+.axone-faucet-testnet-main {
   @include with-theme {
     height: 100%;
     overflow: auto;
     background: themed('header-background');
 
-    .okp4-faucet-testnet-content {
+    .axone-faucet-testnet-content {
       min-height: 100%;
       display: flex;
       flex-direction: column;
@@ -27,12 +27,12 @@ body {
       background-repeat: no-repeat;
       align-items: center;
 
-      .okp4-brand-link {
+      .axone-brand-link {
         text-decoration: unset;
         color: inherit;
       }
 
-      .okp4-faucet-content {
+      .axone-faucet-content {
         padding: 25px;
       }
     }
